@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+
+
+
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container">
+      <h1> Insert your CSV file and then DOWNLOAD the Result's </h1>
+  </div>
+    <div class="w3-row">
+      
+          <form action="/SAVE_RESULTS_PAGE" method="post" enctype="multipart/form-data">
+              <!--<label for="file-upload" class="w3-button w3-padding-large w3-white w3-border">
+                  File
+              </label>-->
+              <input id="file-upload" type="file" name="data_file"/>
+              <br>
+              <br>
+              <div>
+              <button type="submit" class="button">Download</button>
+          </div>
+          </form>
+      </div>
+      
+</div>
+
+
+<hr>
+
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container">
+
+      {{table | safe}}
+
+  </div>
+
+</div>    
+
+
+{% endblock %}

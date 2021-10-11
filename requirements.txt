@@ -1,0 +1,5 @@
+Flask==1.1.2
+lightgbm==3.2.1
+catboost==0.25.1
+xgboost==1.4.1
+feature-engine==1.0.2
