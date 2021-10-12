@@ -1,12 +1,8 @@
 <!doctype html>
 <html>
 <head>
-    
-    
-    
-    <style>
-        
 
+    <style>
         html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
         h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
         
@@ -36,20 +32,28 @@
         padding: 15px;
         text-align: left;
         }
-        tr:nth-child(even) {background-color: #f2f2f2;}
-        th {
-        background-color: #4b58d3;
-        color: white;
-        }
-
-        /*input[type="file"] {
-        display: none;
-                    }
-                      */
         table {
-            margin-left: auto;
-            margin-right: auto;
-                    }
+  border-collapse: collapse;
+  width: 99%;
+  border-radius: 30px;
+        border-style: hidden; /* hide standard table (collapsed) border */
+        box-shadow: 0 0 0 #666; 
+  
+}
+
+th, td {
+  text-align: left;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  
+  background-color: #4b58d3;
+  color: white;
+}
         ul {
             list-style-type: none;
             margin: 0;
@@ -104,10 +108,6 @@ button:hover {
   opacity: 0.8;
 }
 
-
-
-
-
 .container {
   padding: 16px;
 }
@@ -117,17 +117,11 @@ span.psw {
   padding-top: 16px;
 }
 
-
-
-
 img {
-  
-  
   width: 20%;
   margin-bottom: -16%;
   height: auto;
 }
-
 .button {
   display: inline-block;
   padding: 15px 25px;
@@ -146,13 +140,16 @@ img {
 .button:hover {background-color: #2533ad}
 
 .button:active {
-  background-color: #3e8e41;
+  background-color: #4b58d3;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
+.w3-white{
+border-radius: 25px;
+}
 
-        </style>
+   </style>
     
     <title>{% block title %}{% endblock %}</title>
 </head>
@@ -164,7 +161,7 @@ img {
   <img src="{{ url_for('static', filename='Alder Hey Innovation logo no BG.png') }}" />
     <header class="w3-container w3-center w3-padding-32"> 
         <h1><b>ALDER HEY WNB PREDICTION APP</b></h1>
-        <!-- <p>Welcome to this <span class="w3-tag">FLASK App.</span></p> -->
+        
       </header>
 
       <ul class="menu">
