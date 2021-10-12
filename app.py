@@ -11,6 +11,7 @@ from flask import (
     g,
     redirect,
     make_response,
+    jsonify,
     render_template,
     request,
     session,
